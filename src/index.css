@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #0d0e15;
+    color: #f3f4f6;
+    font-family: 'Chakra Petch', sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+    overflow: hidden;
+  }
+}
+
+.font-arcade {
+  font-family: 'Press Start 2P', monospace;
+}
+
+.font-digital {
+  font-family: 'VT323', monospace;
+}
+
+.font-ui {
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+/* Pixelated canvas rendering */
+.pixel-canvas {
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+/* Optional CRT scanline overlay */
+.scanlines {
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 0, 0, 0.35) 50%
+  ), linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 0.03),
+    rgba(0, 255, 0, 0.01),
+    rgba(0, 0, 255, 0.03)
+  );
+  background-size: 100% 4px, 6px 100%;
+  pointer-events: none;
+}
+
+/* Retro arcade glow effects */
+.arcade-glow-pink {
+  text-shadow: 0 0 8px rgba(255, 42, 109, 0.8), 0 0 20px rgba(255, 42, 109, 0.4);
+}
+
+.arcade-glow-cyan {
+  text-shadow: 0 0 8px rgba(5, 217, 232, 0.8), 0 0 20px rgba(5, 217, 232, 0.4);
+}
+
+.arcade-glow-yellow {
+  text-shadow: 0 0 8px rgba(255, 230, 0, 0.8), 0 0 20px rgba(255, 230, 0, 0.4);
+}

@@ -1,0 +1,7 @@
+{
+  "name": "OutRun Retro 1986 Racer",
+  "description": "A 16-bit pseudo-3D retro arcade racer inspired by OutRun (1986) featuring sprite scaling, parallax sunset backdrops, branching checkpoint routes, synthwave Web Audio, and responsive arcade controls.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
